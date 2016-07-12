@@ -50,9 +50,9 @@ Actually if you want to just find by keywords - here's a simple method `search()
 I've put few tests in this project. You have to add new data only after you annotated and configured hibernate search. If you already have some data you should reindex your database. Also you can purge (delete) indexed rows. These methods are not really difficult check out [this documentation](https://docs.jboss.org/hibernate/search/3.2/reference/en/html/manual-index-changes.html). 
 
 ##Tips and exceptions.
-If you are encoutering with troubles about lists or fetchting type - there're three ways to solve it:
+If you are encoutering with troubles around lists or fetchting type - there're three ways to solve it:
   1. Make a [StringBridge](https://docs.jboss.org/hibernate/search/4.1/api/org/hibernate/search/bridge/builtin/StringBridge.html) (if just only string you need to index);
-  2. Change List to Set (if it's possible for you);
+  2. Replace List with Set (if it's possible for you);
   3. If you can't manage your entity without EAGER fetch type, you can put here SELECT fetch Mode `@Fetch(FetchMode.SELECT)`.
 Not just onestringenum Enums creating with the same way by [EnumBridge](https://docs.jboss.org/hibernate/search/4.1/api/org/hibernate/search/bridge/builtin/EnumBridge.html)
 
