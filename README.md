@@ -26,7 +26,7 @@ Set your own database url, username and password.
 Simple POJOs with @Entity and @Table annotations is all you need. Don't forget to put there getters and setters!
 
 ##Add Search annotations on your classes:
-Mark the table you want to search with annotation `@Indexed`, and on the fields `@Field`. You can also parametrise those annotations with bunch of properties (checkout this [community documentation](https://docs.jboss.org/hibernate/stable/search/reference/en-US/html_single/#_defining_fields_for_indexing)).
+Mark the table you want to search with annotation `@Indexed`, and on the fields `@Field`. You can also parametrise these annotations with bunch of properties (checkout this [community documentation](https://docs.jboss.org/hibernate/stable/search/reference/en-US/html_single/#_defining_fields_for_indexing)).
 If you want to index the associated columns you have to mark them at parent class by `@InexedEmbedded` and in the associated class the same as common field by `@Field`.
 
 ### At `User` 
@@ -47,7 +47,7 @@ If you want to index the associated columns you have to mark them at parent clas
 Actually if you want to just find by keywords - here's a simple method `search()`, which fields you already annotated. You can create lucene query from hibernate query which is created from fulltext search entity manager.
 
 ##That's it! 
-I've put few tests in this project. You have to add new data only after you annotated and configured hibernate search. If you already have some data you should reindex your database. Also you can purge (delete) indexed rows. Those methods are not really difficult check out [this documentation](https://docs.jboss.org/hibernate/search/3.2/reference/en/html/manual-index-changes.html). 
+I've put few tests in this project. You have to add new data only after you annotated and configured hibernate search. If you already have some data you should reindex your database. Also you can purge (delete) indexed rows. These methods are not really difficult check out [this documentation](https://docs.jboss.org/hibernate/search/3.2/reference/en/html/manual-index-changes.html). 
 
 ##Tips and exceptions.
 If you are encoutering with troubles about lists or fetchting type - there're three ways to solve it:
@@ -57,3 +57,8 @@ If you are encoutering with troubles about lists or fetchting type - there're th
 Not just onestringenum Enums creating with the same way by [EnumBridge](https://docs.jboss.org/hibernate/search/4.1/api/org/hibernate/search/bridge/builtin/EnumBridge.html)
 
 ##That's all I'd like to tell you. Wish you good luck and hard effort!
+If you want to contact me: 
+  * emai: ugncry@gmail.com
+  * [Twitter](https://twitter.com/ugncry)
+  * [Facebook](https://www.facebook.com/eugene.cryshtal)
+  
