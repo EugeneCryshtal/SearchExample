@@ -33,7 +33,6 @@ public class User extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @IndexedEmbedded
-//    @Fetch(FetchMode.SELECT)
     private List<PhoneNumber> numbers;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
